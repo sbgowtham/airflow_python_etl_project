@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS etl_example;
+
+USE etl_example;
+
+CREATE TABLE IF NOT EXISTS sample_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    age INT,
+    city VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO sample_data (name, age, city) VALUES 
+('Alice', 30, 'New York'),
+('Bob', 25, 'Los Angeles'),
+('Charlie', 35, 'Chicago');
+
+
+
+INSERT INTO sample_data (name, age, city) VALUES 
+('kumar', 40, 'New York');
